@@ -1,3 +1,7 @@
+# =========================
+# UNITY GENERATED
+# =========================
+
 Library/
 Temp/
 Obj/
@@ -5,6 +9,60 @@ Build/
 Builds/
 Logs/
 UserSettings/
+MemoryCaptures/
+
+# =========================
+# IDE (Visual Studio / Rider / VSCode)
+# =========================
+
+.vs/
+.idea/
+.vscode/
 
 *.csproj
+*.unityproj
 *.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+
+# =========================
+# OS GENERATED
+# =========================
+
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# =========================
+# UNITY CACHE / MISC
+# =========================
+
+sysinfo.txt
+*.apk
+*.aab
+*.unitypackage
+
+# =========================
+# ADDRESSABLES (optional)
+# =========================
+
+ServerData/
+
+# =========================
+# DOTS / BURST (optional)
+# =========================
+
+[Bb]urstCache/
+[Ll]ogs/
+
+# =========================
+# TEST / COVERAGE (optional)
+# =========================
+
+TestResults/
