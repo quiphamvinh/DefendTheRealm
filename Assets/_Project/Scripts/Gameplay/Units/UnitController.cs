@@ -5,19 +5,24 @@ using UnityEngine;
 public class UnitController : MonoBehaviour     // nhập input / điều khiển
 {
     private UnitMovement movement;
+    private SelectionManager selectionManager;
 
     private void Awake()
     {
         movement = GetComponent<UnitMovement>();
+        selectionManager = FindObjectOfType<SelectionManager>();
     }
     private void Update()
     {
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1)) // Chuột phải
         {
-            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            mousePos.z = 0;
+            if (selectionManager.GetSelectedUnit() == GetComponent<SelectableUnit>())
+            {
+                Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                mousePos.z = 0;
 
-            movement.MoveTo(mousePos);
+                movement.MoveTo(mousePos);
+            }
         }
     }
 }
