@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 787690147
+    locked: 0
+  - name: Unit
+    uniqueID: 1615597189
+    locked: 0
+  - name: Building
+    uniqueID: 2335119685
+    locked: 0
+  - name: UI
+    uniqueID: 1923318935
+    locked: 0
