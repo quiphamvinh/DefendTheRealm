@@ -8,6 +8,7 @@ public class PawnController : MonoBehaviour     // quản lý state hiện ta�
     private void Start()
     {
         Debug.Log("Pawn FSM Ready");
+        ChangeState(new PawnIdleState(this));
     }
     private void Update()
     {
