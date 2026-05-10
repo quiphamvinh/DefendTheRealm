@@ -7,15 +7,32 @@ public class PawnController : MonoBehaviour     // quản lý state hiện ta�
 {
     private PawnState currentState;
     public UnitMovement Movement { get; private set; }
+
+    [Header("Inventory")]
+    [SerializeField] private int inventoryCapacity = 10;
+    private int currentInventoy = 0;
+
     private void Awake()
     {
         Movement = GetComponent<UnitMovement>();
     }
+
     private void Start()
     {
         Debug.Log("Pawn FSM Ready");
         ChangeState(new PawnIdleState(this));
     }
+
+    public bool IsInventoryFull()
+    {
+        return currentInventoy >= inventoryCapacity;
+    }
+
+    public void AddResource(int amount)
+    {
+        currentInventoy += amount;
+    }
+
     private void Update()
     {
         // nếu currentState khác null -> gọi Update()
@@ -31,6 +48,19 @@ public class PawnController : MonoBehaviour     // quản lý state hiện ta�
         {
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             mousePos.z = 0;
+
+            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
+
+            if (hit.collider != null)
+            {
+                ResourceNode resourceNode = hit.collider.GetComponent<ResourceNode>();
+
+                if (resourceNode != null)
+                {
+                    ChangeState(new PawnGatherState(this, resourceNode));
+                    return;
+                }
+            }
 
             ChangeState(new PawnMoveState(this, mousePos));
         }
