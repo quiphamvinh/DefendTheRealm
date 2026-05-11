@@ -1,12 +1,15 @@
+using System;
 using UnityEngine;
 
 public class PawnMoveState : PawnState
 {
     private Vector3 targetPosition;
+    private Action onReachedTarget;
 
-    public PawnMoveState(PawnController pawn, Vector3 targetPosition) : base(pawn)
+    public PawnMoveState(PawnController pawn, Vector3 targetPosition, Action onReachedTarget = null) : base(pawn)
     {
         this.targetPosition = targetPosition;
+        this.onReachedTarget = onReachedTarget;
     }
 
     public override void Enter()
@@ -20,7 +23,14 @@ public class PawnMoveState : PawnState
     {
         if (Vector3.Distance(pawn.transform.position, targetPosition) < 0.1f)
         {
-            pawn.ChangeState(new PawnIdleState(pawn));
+            if (onReachedTarget != null)
+            {
+                onReachedTarget.Invoke();
+            }
+            else
+            {
+                pawn.ChangeState(new PawnIdleState(pawn));
+            }
         }
     }
 

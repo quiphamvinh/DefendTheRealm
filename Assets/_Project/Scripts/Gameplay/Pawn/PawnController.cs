@@ -57,7 +57,16 @@ public class PawnController : MonoBehaviour     // quản lý state hiện ta�
 
                 if (resourceNode != null)
                 {
-                    ChangeState(new PawnGatherState(this, resourceNode));
+                    ChangeState(
+                        new PawnMoveState(
+                            this,
+                            resourceNode.transform.position,
+                            () =>
+                            {
+                                ChangeState(new PawnGatherState(this, resourceNode));
+                            }
+                        )
+                    ); 
                     return;
                 }
             }
