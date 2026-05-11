@@ -44,7 +44,7 @@ public class PawnGatherState : PawnState
 
         if (pawn.IsInventoryFull())
         {
-            pawn.ChangeState(new PawnIdleState(pawn));
+            pawn.ChangeState(new PawnReturnState(pawn));
         }
     }
 

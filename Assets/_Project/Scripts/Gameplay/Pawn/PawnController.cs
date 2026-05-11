@@ -8,9 +8,13 @@ public class PawnController : MonoBehaviour     // quản lý state hiện ta�
     private PawnState currentState;
     public UnitMovement Movement { get; private set; }
 
+    [Header("References")]
+    [SerializeField] private BaseController homeBase;
+    public BaseController HomeBase => homeBase;
+
     [Header("Inventory")]
     [SerializeField] private int inventoryCapacity = 10;
-    private int currentInventoy = 0;
+    [SerializeField] private int currentInventory = 0;
 
     private void Awake()
     {
@@ -25,12 +29,19 @@ public class PawnController : MonoBehaviour     // quản lý state hiện ta�
 
     public bool IsInventoryFull()
     {
-        return currentInventoy >= inventoryCapacity;
+        return currentInventory >= inventoryCapacity;
     }
 
     public void AddResource(int amount)
     {
-        currentInventoy += amount;
+        currentInventory += amount;
+    }
+
+    public void DepositResources()
+    {
+        homeBase.Deposit(currentInventory);
+
+        currentInventory = 0;
     }
 
     private void Update()
