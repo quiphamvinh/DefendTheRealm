@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BaseController : MonoBehaviour
 {
-    private int storedResources;
+    [SerializeField] private int storedResources;
     
     public void Deposit(int amount)
     {
