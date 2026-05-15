@@ -7,7 +7,11 @@
       "RelativeMoniker": "D:0:0:{0421FA2B-996B-70C1-EA81-16B2F7CE6B23}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\gameplay\\enemy\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0421FA2B-996B-70C1-EA81-16B2F7CE6B23}|Assembly-CSharp.csproj|d:\\game unity\\defendtherealm\\assets\\_project\\scripts\\gameplay\\resource\\resourcenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0421FA2B-996B-70C1-EA81-16B2F7CE6B23}|Assembly-CSharp.csproj|d:\\game unity\\defendtherealm\\assets\\_project\\scripts\\gameplay\\health\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0421FA2B-996B-70C1-EA81-16B2F7CE6B23}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\gameplay\\health\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0421FA2B-996B-70C1-EA81-16B2F7CE6B23}|Assembly-CSharp.csproj|D:\\Game Unity\\DefendTheRealm\\assets\\_project\\scripts\\gameplay\\resource\\resourcenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0421FA2B-996B-70C1-EA81-16B2F7CE6B23}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\gameplay\\resource\\resourcenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -70,11 +74,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Health.cs",
+              "DocumentMoniker": "D:\\Game Unity\\DefendTheRealm\\Assets\\_Project\\Scripts\\Gameplay\\Health\\Health.cs",
+              "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Gameplay\\Health\\Health.cs",
+              "ToolTip": "D:\\Game Unity\\DefendTheRealm\\Assets\\_Project\\Scripts\\Gameplay\\Health\\Health.cs",
+              "RelativeToolTip": "Assets\\_Project\\Scripts\\Gameplay\\Health\\Health.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T08:57:50.993Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -84,14 +101,14 @@
               "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Gameplay\\Enemy\\EnemyController.cs",
               "ToolTip": "D:\\Game Unity\\DefendTheRealm\\Assets\\_Project\\Scripts\\Gameplay\\Enemy\\EnemyController.cs",
               "RelativeToolTip": "Assets\\_Project\\Scripts\\Gameplay\\Enemy\\EnemyController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAuwCQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-14T05:56:44.503Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "PawnReturnState.cs",
               "DocumentMoniker": "D:\\Game Unity\\DefendTheRealm\\Assets\\_Project\\Scripts\\Gameplay\\Pawn\\States\\PawnReturnState.cs",
               "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Gameplay\\Pawn\\States\\PawnReturnState.cs",
@@ -103,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "BaseController.cs",
               "DocumentMoniker": "D:\\Game Unity\\DefendTheRealm\\Assets\\_Project\\Scripts\\Gameplay\\Base\\BaseController.cs",
               "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Gameplay\\Base\\BaseController.cs",
@@ -115,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "PawnGatherState.cs",
               "DocumentMoniker": "D:\\Game Unity\\DefendTheRealm\\Assets\\_Project\\Scripts\\Gameplay\\Pawn\\States\\PawnGatherState.cs",
               "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Gameplay\\Pawn\\States\\PawnGatherState.cs",
@@ -127,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ResourceNode.cs",
               "DocumentMoniker": "D:\\Game Unity\\DefendTheRealm\\Assets\\_Project\\Scripts\\Gameplay\\Resource\\ResourceNode.cs",
               "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Gameplay\\Resource\\ResourceNode.cs",
@@ -135,12 +152,11 @@
               "RelativeToolTip": "Assets\\_Project\\Scripts\\Gameplay\\Resource\\ResourceNode.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T10:18:28.317Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-10T10:18:28.317Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ResourceType.cs",
               "DocumentMoniker": "D:\\Game Unity\\DefendTheRealm\\Assets\\_Project\\Scripts\\Gameplay\\Resource\\ResourceType.cs",
               "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Gameplay\\Resource\\ResourceType.cs",
@@ -152,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "PawnMoveState.cs",
               "DocumentMoniker": "D:\\Game Unity\\DefendTheRealm\\Assets\\_Project\\Scripts\\Gameplay\\Pawn\\States\\PawnMoveState.cs",
               "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Gameplay\\Pawn\\States\\PawnMoveState.cs",
@@ -164,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "PawnIdleState.cs",
               "DocumentMoniker": "D:\\Game Unity\\DefendTheRealm\\Assets\\_Project\\Scripts\\Gameplay\\Pawn\\States\\PawnIdleState.cs",
               "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Gameplay\\Pawn\\States\\PawnIdleState.cs",
@@ -176,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "PawnState.cs",
               "DocumentMoniker": "D:\\Game Unity\\DefendTheRealm\\Assets\\_Project\\Scripts\\Gameplay\\Pawn\\PawnState.cs",
               "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Gameplay\\Pawn\\PawnState.cs",
@@ -188,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "PawnController.cs",
               "DocumentMoniker": "D:\\Game Unity\\DefendTheRealm\\Assets\\_Project\\Scripts\\Gameplay\\Pawn\\PawnController.cs",
               "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Gameplay\\Pawn\\PawnController.cs",
@@ -200,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "SelectionManager.cs",
               "DocumentMoniker": "D:\\Game Unity\\DefendTheRealm\\Assets\\_Project\\Scripts\\Gameplay\\Selection\\SelectionManager.cs",
               "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Gameplay\\Selection\\SelectionManager.cs",
@@ -212,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "SelectableUnit.cs",
               "DocumentMoniker": "D:\\Game Unity\\DefendTheRealm\\Assets\\_Project\\Scripts\\Gameplay\\Selection\\SelectableUnit.cs",
               "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Gameplay\\Selection\\SelectableUnit.cs",
@@ -224,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "UnitController.cs",
               "DocumentMoniker": "D:\\Game Unity\\DefendTheRealm\\Assets\\_Project\\Scripts\\Gameplay\\Units\\UnitController.cs",
               "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Gameplay\\Units\\UnitController.cs",
@@ -236,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "UnitMovement.cs",
               "DocumentMoniker": "D:\\Game Unity\\DefendTheRealm\\Assets\\_Project\\Scripts\\Gameplay\\Units\\UnitMovement.cs",
               "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Gameplay\\Units\\UnitMovement.cs",
@@ -248,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "GameManager.cs",
               "DocumentMoniker": "D:\\Game Unity\\DefendTheRealm\\Assets\\_Project\\Scripts\\Managers\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Managers\\GameManager.cs",
