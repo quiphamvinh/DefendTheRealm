@@ -32,6 +32,7 @@ public class CombatUnitController : MonoBehaviour
             return;
         }
 
+
         float distance = Vector3.Distance(transform.position, currentTarget.transform.position);
 
         if (distance <= attackRange)
@@ -71,19 +72,30 @@ public class CombatUnitController : MonoBehaviour
 
     private void Attack()
     {
+        if (currentTarget == null)
+        {
+            return;
+        }
+
         attackTimer += Time.deltaTime;
 
         if (attackTimer >= attackCooldown)
         {
             attackTimer = 0f;
 
-            Health targetHealth = currentTarget.GetComponent<Health>();
+            Health targetHealth =
+                currentTarget.GetComponent<Health>();
 
             if (targetHealth != null)
             {
                 targetHealth.TakeDamage(damage);
 
                 Debug.Log("Combat Unit Attacked Enemy");
+            }
+
+            if (currentTarget == null)
+            {
+                return;
             }
         }
     }
