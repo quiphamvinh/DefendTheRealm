@@ -21,6 +21,7 @@ public class EnemyController : MonoBehaviour
     private void Awake()
     {
         movement = GetComponent<UnitMovement>();
+        targetBase = FindAnyObjectByType<BaseController>();
         baseHealth = targetBase.GetComponent<Health>();
     }
 
