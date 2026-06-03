@@ -18,30 +18,49 @@ public class CombatUnitController : MonoBehaviour
 
     private EnemyController currentTarget;
 
+    private CombatState currentState;
+
+    public EnemyController CurrentTarget => currentTarget;
+
+    public float AttackRange => attackRange;
+
     private void Awake()
     {
         movement = GetComponent<UnitMovement>();
+
+        ChangeState(
+            new CombatIdleState(this)
+        );
+    }
+
+    public void ChangeState(CombatState newState)
+    {
+        if (currentState != null)
+        {
+            currentState.Exit();
+        }
+
+        currentState = newState;
+
+        currentState.Enter();
     }
 
     private void Update()
     {
+        currentState.Update();
+    }
+
+    public void MoveToTarget()
+    {
         if (currentTarget == null)
         {
-            FindTarget();
-
             return;
         }
 
-
-        float distance = Vector3.Distance(transform.position, currentTarget.transform.position);
-
-        if (distance <= attackRange)
-        {
-            Attack();
-        }
+        movement.MoveTo(currentTarget.transform.position);
     }
 
-    private void FindTarget()
+    public void FindTarget()
     {
         EnemyController[] enemies = FindObjectsOfType<EnemyController>();
 
@@ -70,7 +89,7 @@ public class CombatUnitController : MonoBehaviour
         }
     }
 
-    private void Attack()
+    public void Attack()
     {
         if (currentTarget == null)
         {
@@ -83,13 +102,11 @@ public class CombatUnitController : MonoBehaviour
         {
             attackTimer = 0f;
 
-            Health targetHealth =
-                currentTarget.GetComponent<Health>();
+            Health targetHealth = currentTarget.GetComponent<Health>();
 
             if (targetHealth != null)
             {
                 targetHealth.TakeDamage(damage);
-
                 Debug.Log("Combat Unit Attacked Enemy");
             }
 
